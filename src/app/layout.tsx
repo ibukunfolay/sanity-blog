@@ -1,3 +1,4 @@
+import Providers from '@/components/providers'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -16,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className} suppressHydrationWarning={true} >{children}</body>
+      <body className={inter.className} suppressHydrationWarning={true} >
+        <Providers>
+        {children}
+        </Providers>
+      </body>
     </html>
   )
 }
