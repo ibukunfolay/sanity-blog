@@ -1,4 +1,4 @@
-import SubmitBtn from './SubmitBtn';
+import SubmitBtn from "./SubmitBtn";
+import SignIn from "./SignIn";
 
-
-export {SubmitBtn}
+export { SubmitBtn, SignIn };
